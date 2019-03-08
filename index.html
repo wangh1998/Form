@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>表单验证</title>
+    <link rel="stylesheet" href="./css/index.css" />
+    <script src="./js/index.js"></script>
+  </head>
+  <body>
+    <div class="box">
+      <form>
+        <table>
+          <tbody>
+            <tr>
+              <td>调查名称</td>
+              <td>
+                <input
+                  type="text"
+                  placeholder="调查名称格式：创建人姓名-调查名称"
+                  id="name"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>调查负责人</td>
+              <td>
+                <input
+                  type="text"
+                  placeholder="负责人名称，不能为空"
+                  id="manager"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>调查联系人</td>
+              <td>
+                <input
+                  type="text"
+                  placeholder="联系人名称，可以为空"
+                  id="concatPeople"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>是否预调研</td>
+              <td>
+                <label
+                  ><input
+                    type="radio"
+                    value="0"
+                    checked
+                    name="isPreResearch"
+                    class="radio"
+                  />是</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    value="1"
+                    name="isPreResearch"
+                    class="radio"
+                  />否</label
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>被调查企业账号</td>
+              <td>
+                <textarea
+                  name="enterpriseIds"
+                  id="enterpriseIds"
+                  cols="30"
+                  rows="10"
+                  placeholder="企业账号之间以英文逗号分割，如234,456,不能为空"
+                ></textarea>
+              </td>
+            </tr>
+            <tr>
+              <td>调查摘要</td>
+              <td>
+                <textarea
+                  name="desc"
+                  id="desc"
+                  cols="30"
+                  rows="10"
+                  placeholder="可以为空"
+                ></textarea>
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                <button class="Sub">立即创建</button>
+                <button class="Exit">取消</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </form>
+    </div>
+  </body>
+</html>

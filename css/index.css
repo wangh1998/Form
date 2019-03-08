@@ -1,0 +1,45 @@
+html,body,h1,h2,h3,h4,h5,h6,ol,ul,dl,p{
+  margin: 0;
+  padding: 0;
+}
+form{
+  margin-top: 20px;
+}
+input,button,textarea{
+  vertical-align: middle;
+  height: 100%;
+  border-radius: 5px;
+  outline-style: none;
+  padding: 0 5px;
+  box-sizing: border-box;
+}
+.box {
+  width: 600px;
+  margin: 0 auto;
+}
+table,tbody{
+  width: 100%;
+}
+tr td:first-child{
+  width: 150px;
+  text-align: right;
+  padding-right: 10px;
+  box-sizing: border-box;
+}
+tr td input,tr td textarea{
+  height: 100%;
+  width: 100%;
+}
+tr td textarea{
+  height: 60px;
+}
+.radio{
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+}
+.Sub{
+  width: 80px;
+  background: rgb(66, 221, 213);
+  text-align: center;
+}
